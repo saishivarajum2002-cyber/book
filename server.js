@@ -292,12 +292,18 @@ async function sendBookPackage(toEmail, customerName, paymentId) {
   return info;
 }
 
-app.listen(PORT, () => {
-  console.log(`\n=================================================`);
-  console.log(`  "${BOOK_TITLE}" Sales & Delivery Server`);
-  console.log(`  Author: ${AUTHOR_NAME}`);
-  console.log(`  Server live at: http://localhost:${PORT}`);
-  console.log(`  Free Chapter 1: http://localhost:${PORT}/download/chapter-1`);
-  console.log(`  Health Check:   http://localhost:${PORT}/api/health`);
-  console.log(`=================================================\n`);
-});
+// Export the app for Vercel serverless function
+module.exports = app;
+
+// Only listen locally, Vercel handles the serverless execution
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`\n=================================================`);
+    console.log(`  "${BOOK_TITLE}" Sales & Delivery Server`);
+    console.log(`  Author: ${AUTHOR_NAME}`);
+    console.log(`  Server live at: http://localhost:${PORT}`);
+    console.log(`  Free Chapter 1: http://localhost:${PORT}/download/chapter-1`);
+    console.log(`  Health Check:   http://localhost:${PORT}/api/health`);
+    console.log(`=================================================\n`);
+  });
+}
