@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You for Your Order | The Instinctive Trust Skill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-base: #F8F6F1;
+      --bg-card: #FFFFFF;
+      --ink-primary: #171A21;
+      --ink-secondary: #4A5162;
+      --accent: #B38038;
+      --border: #E3DCCF;
+      --success: #2E7D32;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg-base);
+      color: var(--ink-primary);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+    }
+
+    .thank-you-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 620px;
+      width: 100%;
+      padding: 48px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+
+    .success-badge {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: #E8F5E9;
+      color: var(--success);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 24px;
+      border: 2px solid #A5D6A7;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--ink-secondary);
+      margin-bottom: 28px;
+    }
+
+    .delivery-box {
+      background: #FAF8F5;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+
+    .delivery-box h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: var(--ink-primary);
+    }
+
+    .delivery-box ul {
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: var(--ink-secondary);
+    }
+
+    .delivery-box ul li {
+      margin-bottom: 4px;
+    }
+
+    .steps-list {
+      text-align: left;
+      margin: 24px 0;
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+    }
+
+    .steps-list p {
+      margin-bottom: 10px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background: var(--ink-primary);
+      color: #FFFFFF;
+      font-weight: 600;
+      padding: 13px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .btn-home:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.82rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-card">
+    <div class="success-badge">✓</div>
+    <h1>Payment Complete!</h1>
+    <p class="subtitle">Thank you for purchasing <strong>The Instinctive Trust Skill</strong> by Sai Shivarajuu M.</p>
+
+    <div class="delivery-box">
+      <h3>📬 What happens next:</h3>
+      <ul>
+        <li>Your <strong>220-page full Ebook</strong> is on its way to your email.</li>
+        <li>Your <strong>5 Daily Workbook Action Plans (Day 1 through Day 5)</strong> are attached.</li>
+        <li>Your <strong>5-Day Master Workbook</strong> is also included.</li>
+      </ul>
+    </div>
+
+    <div class="steps-list">
+      <p><strong>1. Check your email:</strong> Delivery happens automatically within 1–2 minutes.</p>
+      <p><strong>2. Check Spam / Promotions:</strong> If you don't see it in your Primary inbox, check your spam or promotions tab.</p>
+      <p><strong>3. Start with Day 1:</strong> Print or save Day 1's action plan and begin with the <em>3-Second Threshold Pause</em>.</p>
+    </div>
+
+    <a href="/" class="btn-home">Return to Homepage</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Sai Shivarajuu M · The Instinctive Trust Skill</p>
+  </footer>
+
+</body>
+</html>

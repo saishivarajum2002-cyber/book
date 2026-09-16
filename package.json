@@ -1,0 +1,25 @@
+{
+  "name": "the-instinctive-trust-skill-store",
+  "version": "1.0.0",
+  "description": "Sales landing page, free chapter download, and automated multi-attachment book delivery for The Instinctive Trust Skill by Sai Shivarajuu M",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build:workbooks": "python generate_workbooks.py"
+  },
+  "keywords": [
+    "ebook",
+    "dodo-payments",
+    "auto-delivery",
+    "action-plan"
+  ],
+  "author": "Sai Shivarajuu M",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.9",
+    "standardwebhooks": "^1.1.1"
+  }
+}
